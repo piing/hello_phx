@@ -6,4 +6,7 @@ defmodule HelloWeb.PageController do
     # so skip the default app layout.
     render(conn, :home, layout: false)
   end
+  def hi(conn,_params) do
+    html(conn, "Hi, Wrold!")
+  end
 end
